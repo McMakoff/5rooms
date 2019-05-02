@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Дизайн</title>
+	<meta name="description" content="описание не длинее 155 символов">
+	<meta name="keywords" content="мета-теги, шаблон, html, css">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/favicon57.png" data-mce-href="img/favicons/favicon57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/favicon60.png" data-mce-href="img/favicons/favicon60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/favicon72.png" data-mce-href="img/favicons/favicon72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/favicon76.png" data-mce-href="img/favicons/favicon76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/favicon114.png" data-mce-href="img/favicons/favicon114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/favicon120.png" data-mce-href="img/favicons/favicon120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/favicon144.png" data-mce-href="img/favicons/favicon144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/favicon152.png" data-mce-href="img/favicons/favicon152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/favicon180.png" data-mce-href="img/favicons/favicon180.png">
+	<link rel="icon" type="image/png" href="img/favicons/favicon32.png" sizes="32x32" data-mce-href="img/favicons/favicon32.png">
+	<link rel="icon" type="image/png" href="img/favicons/favicon192.png" sizes="192x192" data-mce-href="img/favicons/favicon192.png">
+	<link rel="icon" type="image/png" href="img/favicons/favicon96.png" sizes="96x96" data-mce-href="img/favicons/favicon96.png">
+	<link rel="icon" type="image/png" href="img/favicons/favicon16.png" sizes="16x16" data-mce-href="img/favicons/favicon16.png">
+    <link rel="stylesheet" href="css/slick.css" type="text/css">
+    <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
+	<link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+<body>
+	<div class="section-main">
+		<header class="main-header">
+			<div class="container">
+				<a href="#" class="logo img-wrap">
+					<img src="img/logo.svg" alt="Логотип">
+				</a>
+			</div>
+		</header>
+	</div>
+	
+	<footer class="main-footer">
+		
+	</footer>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script>
+		$('.recipes__slider').slick({
+		  dots: true,
+		  arrows:true,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 4,
+		  slidesToScroll: 4,
+		  responsive: [
+		    {
+		      breakpoint: 750,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 3,
+		        infinite: true,
+		        dots: true
+		      }
+		    },
+		    {
+		      breakpoint: 600,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 2
+		      }
+		    },
+		    {
+		      breakpoint: 400,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		  ]
+		});
+	</script>
+</body>
+</html>
