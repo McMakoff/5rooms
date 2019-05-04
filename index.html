@@ -25,16 +25,142 @@
 	<link rel="stylesheet" href="css/style.min.css" type="text/css">
 </head>
 <body>
-	<div class="section-main">
+	<div class="main-wrapper">
 		<header class="main-header">
-			<div class="container">
-				<a href="#" class="logo img-wrap">
-					<img src="img/logo.svg" alt="Логотип">
+			<div class="container main-header__wrap">
+				<a href="#" class="logo img-wrap img-wrap_contain">
+					<picture>
+						<source srcset="img/logo.png" media="(max-width: 720px)">
+						<img src="img/logo.png" alt="Логотип">
+					</picture>
 				</a>
+				<nav class="navigation navigation_main">
+					<button class="navigation__btn">
+						<span></span>
+					</button>
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a href="#" class="navigation__link">Наши цены</a>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link">Схема работы</a>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link">Примеры работ</a>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link">Заказать ремонт</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="main-header__contact">
+					<a href="tel:+74951668574" class="main-header__phone">+7 (495) 166-85-74</a>
+					<a href="mailto:info@5rooms.pro" class="main-header__mail">info@5rooms.pro</a>
+				</div>
+				<button class="back-call__btn main-header__back-call yellow-btn">Обратный звонок</button>
 			</div>
 		</header>
+		<section class="banner">
+			<div class="banner__slider">
+				<div class="banner__item">
+					<div class="banner__img img-wrap img-wrap_cover">
+						<img src="img/main-sl-1.jpg" alt="">
+					</div>
+					<div class="banner__content">
+						<div class="container">
+							<h3 class="banner__title">Индивидуальный <br> дизайн комнаты по <br>фиксированной цене</h3>
+							<p class="banner__price">14 990 РУБ</p>
+							<button class="banner__order-btn yellow-btn">Заказать дизайн проект</button>
+							<div class="banner__count">
+								<span class="banner__count-item">01</span>
+								<span>/</span>
+								<span class="banner__count-all">06</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="banner__item">
+					<div class="banner__img img-wrap img-wrap_cover">
+						<img src="img/main-sl-1.jpg" alt="">
+					</div>
+					<div class="banner__content">
+						<div class="container">
+							<h3 class="banner__title">Индивидуальный <br> дизайн комнаты по <br>фиксированной цене</h3>
+							<p class="banner__price">14 991 РУБ</p>
+							<button class="banner__order-btn yellow-btn">Заказать дизайн проект</button>
+							<div class="banner__count">
+								<span class="banner__count-item">01</span>
+								<span>/</span>
+								<span class="banner__count-all">06</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="banner__item">
+					<div class="banner__img img-wrap img-wrap_cover">
+						<img src="img/main-sl-1.jpg" alt="">
+					</div>
+					<div class="banner__content">
+						<div class="container">
+							<h3 class="banner__title">Индивидуальный <br> дизайн комнаты по <br>фиксированной цене</h3>
+							<p class="banner__price">14 992 РУБ</p>
+							<button class="banner__order-btn yellow-btn">Заказать дизайн проект</button>
+							<div class="banner__count">
+								<span class="banner__count-item">01</span>
+								<span>/</span>
+								<span class="banner__count-all">06</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
 	</div>
+
+	<!-- Модальные окна -->
+
+	<!--Заказать дизайн-проект-->
+	<div class="modal-fade" id="order-design">
+		<div class="modal-content form-content">
+			<button type="button" class="modal-close" id="order-design-close">
+				<span></span>
+			</button>
+			<h2 class="form-title">Оставьте заявку</h2>
+	    	<p class="form-text">И мы свяжемся с вами в ближайшее время</p>
+			<form action="">
+				<input type="text" name="order-name" class="order-name" placeholder="Ваше имя">
+				<input type="tel" name="order-phone" class="order-phone" placeholder="Номер телефона">
+				<input type="email" name="order-email" class="order-email" placeholder="E-mail">
+				<p class="form-politica">Нажимая на кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+				<button type="submit" class="form-submit yellow-btn">Заказать дизайн-проект</button>
+			</form>
+		</div>
+	</div>
+	<!--Заказать дизайн-проект конец-->
 	
+	<!--Заказать звонок-->
+	<div class="modal-fade" id="order-call">
+		<div class="modal-content form-content">
+			<button type="button" class="modal-close" id="order-call-close">
+				<span></span>
+			</button>
+			<h2 class="form-title">Оставьте заявку</h2>
+	    	<p class="form-text">И мы свяжемся с вами в ближайшее время</p>
+			<form action="">
+				<input type="text" name="call-name" class="call-name" placeholder="Ваше имя">
+				<input type="tel" name="call-phone" class="call-phone" placeholder="Номер телефона">
+				<p class="form-politica">Нажимая на кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+				<button type="submit" class="form-submit yellow-btn">Заказать звонок</button>
+			</form>
+		</div>
+	</div>
+	<!--Заказать звонок конец-->
+
+    <!-- Модальные окна конец-->
+
 	<footer class="main-footer">
 		
 	</footer>
@@ -43,39 +169,43 @@
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 	<script>
-		$('.recipes__slider').slick({
-		  dots: true,
+		$('.banner__slider').slick({
+		  dots: false,
 		  arrows:true,
 		  infinite: true,
+		  adaptiveHeight:true,
 		  speed: 300,
-		  slidesToShow: 4,
-		  slidesToScroll: 4,
-		  responsive: [
-		    {
-		      breakpoint: 750,
-		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 3,
-		        infinite: true,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    },
-		    {
-		      breakpoint: 400,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		  ]
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  fade: true,
+  		  cssEase: 'linear'
 		});
+		$(".banner__slider").on('afterChange', function(event, slick, currentSlide){
+	    	$(".banner__count-item").text('0' + (currentSlide + 1));
+	  	});
+	  	$(".banner__count-all").text('0' + $(".banner__slider").slick("getSlick").slideCount);
 	</script>
+	<script>
+		/*function modalOpen(btn, modal, btn_close) {
+			btn.click(function() {
+	        	modal.slideToggle("fast");
+	        });
+	        btn_close.click(function(){
+	        	modal.slideToggle("fast");
+	        });
+		};
+          $(".banner__order-btn").click(function(){
+            $('.modal-fade').slideToggle("fast");
+          });
+          $('.modal-close').click(function(){
+            $('.modal-fade').slideToggle("fast");
+          });*/
+          /*$(".call-btn").click(function(){
+            $(".modal-call").slideToggle("fast");
+          });
+          $(".modal-close").click(function(){
+            $(".modal-call").slideToggle("fast");
+          });*/
+    </script>
 </body>
 </html>
