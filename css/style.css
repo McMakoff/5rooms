@@ -652,7 +652,8 @@ body {
 
 .form-submit {
   display: block;
-  width: 100%; }
+  width: 100%;
+  color: #fff; }
 
 .modal-fade {
   display: none;
@@ -706,16 +707,8 @@ body {
     transform: translate(-50%, -50%) rotate(45deg); }
 
 /*form end*/
-/*design-enter*/
-.design-enter ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-.design-enter__img {
-  display: none; }
-
-.design-enter__head {
+/*design*/
+.design-head {
   margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -725,12 +718,12 @@ body {
   align-items: center;
   color: #d13980; }
 
-.design-enter__title {
+.design-title {
   margin: 0;
   font-size: 18px;
   font-weight: 300; }
 
-.design-enter__count {
+.design-count {
   width: 25px;
   height: 25px;
   margin-right: 10px;
@@ -746,6 +739,22 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   font-size: 16px; }
+
+.design-link {
+  display: block;
+  width: 100%;
+  max-width: 740px;
+  margin: 0 auto; }
+
+/*design end*/
+/*design-enter*/
+.design-enter ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.design-enter__img {
+  display: none; }
 
 .design-enter__content p {
   margin: 0 0 15px;
@@ -777,9 +786,6 @@ body {
       transform: rotate(-45deg); }
 
 .design-enter__link {
-  display: block;
-  width: 100%;
-  max-width: 740px;
   margin: 120px auto 0; }
 
 /*design-enter end*/
@@ -821,6 +827,7 @@ body {
   color: #ffe602; }
 
 /*fixed-price end*/
+/*vr-prezent*/
 .vr-prezent__img {
   margin-bottom: 10px; }
   .vr-prezent__img img {
@@ -836,6 +843,36 @@ body {
   font-size: 14px;
   line-height: 17px;
   text-align: center; }
+
+/*vr-prezent end*/
+.design-days__list {
+  margin: 0 0 10px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none; }
+
+.design-days__item {
+  max-width: 425px;
+  margin-bottom: 20px; }
+
+.design-days__title_small {
+  margin: 0 0 15px;
+  padding-left: 35px;
+  font-family: gilroy-Medium;
+  font-size: 16px; }
+
+.design-days__desc {
+  margin: 0;
+  padding-left: 35px;
+  font-size: 14px;
+  line-height: 17px; }
 
 /*media*/
 @media (min-width: 480px) {
@@ -923,6 +960,8 @@ body {
       transform-origin: right top;
       -webkit-transform: translateY(-50%) rotateX(30deg);
       transform: translateY(-50%) rotateX(30deg); }
+  .design-link {
+    font-size: 20px; }
   .fixed-price__slider {
     max-width: 500px; }
   .fixed-price__content {
@@ -947,14 +986,34 @@ body {
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 21px;
-    text-align: center; } }
+    text-align: center; }
+  .form-submit {
+    font-size: 20px; }
+  .design-days__item {
+    margin-bottom: 40px; }
+  .design-days__head {
+    margin-bottom: 20px; }
+  .design-days__count {
+    width: 45px;
+    height: 45px;
+    border-width: 2px;
+    font-size: 36px; }
+  .design-days__title {
+    font-size: 36px; }
+  .design-days__title_small {
+    padding-left: 55px;
+    font-size: 24px; }
+  .design-days__desc {
+    padding-left: 55px;
+    font-size: 18px;
+    line-height: 21px; } }
 
 @media (min-width: 600px) {
   .design-enter .section-title {
     margin: 0 0 10px; }
-  .design-enter__title {
+  .design-title {
     font-size: 24px; }
-  .design-enter__count {
+  .design-count {
     width: 40px;
     height: 40px;
     margin-right: 15px;
@@ -972,7 +1031,9 @@ body {
       font-size: 18px;
       margin-bottom: 15px; }
   .design-enter__img {
-    height: 250px; } }
+    height: 250px; }
+  .form-submit {
+    font-size: 24px; } }
 
 @media (min-width: 720px) {
   .main-header__contact {
@@ -1018,6 +1079,10 @@ body {
     height: 30px; }
   .section-page {
     padding: 30px 0 60px; }
+  .section-title {
+    margin-bottom: 45px;
+    font-size: 42px;
+    line-height: 48px; }
   .design-enter .section-title {
     margin: 0; }
   .design-enter__wrap {
@@ -1025,12 +1090,16 @@ body {
   .design-enter__img {
     width: 40%;
     height: 300px; }
+  .design-link {
+    font-size: 32px; }
   .vr-prezent__img,
   .form-content {
     max-width: 690px;
     margin: 0 auto; }
   .vr-prezent__img {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .design-days__list {
+    margin: 0 0 20px; } }
 
 @media (min-width: 800px) {
   .fixed-price__slider {
