@@ -43,24 +43,8 @@ jQuery(document).ready(function($){
 	navigation_btn_click (nav_btn_var, nav_btn_open_var, nav_wrap_var, nav_wrap_mobile_var);
 /*Мобильное меню конец*/
 
-	/*function btn_click (bttn, container){
-		bttn.click(function(){
-			if(container.css('display') == 'none'){
-				container.slideDown(300);
-			} else {
-				container.slideUp(300);
-			}
-		});
 
-		$(document).mouseup(function (e){
-			if (!container.is(e.target) && container.has(e.target).length === 0) {
-				container.slideUp(300);
-			}
-		});
-	};*/
-
-	//btn_click($('.banner__order-btn'), $('.banner__order-modal'));
-
+/*Модальные окна*/
 	function modalOpen(btn_open, modal, btn_close) {
 		btn_open.click(function() {
         	modal.slideToggle("fast");
@@ -80,8 +64,9 @@ jQuery(document).ready(function($){
 
 	modalOpen(banner_order_open, design_order_modal, banner_close);
 	modalOpen(back_call_order_open, back_call_order_modal, back_call_close);
+/*Модальные окна конец*/
 
-
+/*координаты стрелок навигации слайлера баннера*/
 	var sp = $('.banner__slider .slick-prev'),
 		container = $('.container'),
 		sn = $('.banner__slider .slick-next'),
@@ -95,5 +80,65 @@ jQuery(document).ready(function($){
 		bc.offset({left:(container.offset().left + sp.width() + 30)});
 		sn.offset({left:(container.offset().left + bc.innerWidth() + sp.width() + 45)});
 	});
+/*координаты стрелок навигации слайлера баннера конец*/
+
+/*Загрузить еще*/
+
+var workExamplesBtn = $('.work-examples__btn'),
+	workExamplesItem2 = $('.work-examples__item:gt(2)'),
+	workExamplesCount = $('.work-examples__count'),
+	workExamplesItem6 = $('.work-examples__item:gt(5)');
+
+/*workExamplesBtn.click(function() {
+	if (workExamplesCount.is(':hidden')) {
+		if (workExamplesItem2.is(":hidden")){
+			workExamplesBtn.text('Свернуть');
+			workExamplesItem2.slideDown();
+		} else if (workExamplesItem2.is(":visible")){
+			workExamplesItem2.slideUp();
+			workExamplesBtn.text('Загрузить еще стилей');
+		}
+	} else if (workExamplesCount.is(':visible')) {
+		if (workExamplesItem6.is(":hidden")){
+			workExamplesBtn.text('Свернуть');
+			workExamplesItem6.slideDown();
+		} else if (workExamplesItem6.is(":visible")){
+			workExamplesItem6.slideUp();
+			workExamplesBtn.text('Загрузить еще стилей');
+		}
+	}
+});*/
+
+workExamplesBtn.click(function() {
+	if (workExamplesCount.is(':hidden')) {
+		if (workExamplesItem2.is(":hidden")){
+			workExamplesBtn.text('Свернуть');
+			workExamplesItem2.slideDown();
+		} else {
+			workExamplesItem2.slideUp();
+			workExamplesBtn.text('Загрузить еще стилей');
+		}
+	} else {
+		if (workExamplesItem6.is(":hidden")){
+			workExamplesBtn.text('Свернуть');
+			workExamplesItem6.slideDown();
+		} else {
+			workExamplesItem6.slideUp();
+			workExamplesBtn.text('Загрузить еще стилей');
+		}
+	}
+});
+
+/*work_examples__btn.click(function() {
+	work_examples__item.slideToggle();
+	if (work_examples__item.css("display") == 'none'){
+		work_examples__btn.text('Загрузить еще стилей');
+	} else if (work_examples__item.css("display") == 'block'){
+		work_examples__btn.text('Свернуть');
+	}
+});*/
+
+
+/*Загрузить еще конец*/
 
 });
