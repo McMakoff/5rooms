@@ -84,32 +84,38 @@ jQuery(document).ready(function($){
 
 /*Загрузить еще*/
 
-var workExamplesBtn = $('.work-examples__btn'),
+var workBtn = $('#work-btn'),
+	btnText = 'Загрузить еще стилей',
+	btnRoomText = 'Загрузить еще',
 	workExamplesItem2 = $('.work-examples__item:gt(2)'),
-	workExamplesCount = $('.work-examples__count'),
-	workExamplesItem6 = $('.work-examples__item:gt(5)');
+	workExamplesCount = $('.work-examples__list .work-examples__count'),
+	workExamplesItem6 = $('.work-examples__item:gt(5)'),
+	workBtnRoom = $('#work-room-btn'),
+	workExamplesRoomItem = $('.work-exampless__room-item:gt(3)');
+
+function loadIem (btn, item, text) {
+	if (item.is(":hidden")) {
+		btn.text('Свернуть');
+		item.slideDown();
+	} else {
+		item.slideUp();
+		btn.text(text);
+	}
+}
+
+workBtn.click(function() {
+	if (workExamplesCount.is(':hidden')) {
+		loadIem(workBtn, workExamplesItem2, btnText);
+	} else {
+		loadIem(workBtn, workExamplesItem6, btnText);
+	}
+});
+
+workBtnRoom.click(function() {
+	loadIem(workBtnRoom, workExamplesRoomItem, btnRoomText);
+});
 
 /*workExamplesBtn.click(function() {
-	if (workExamplesCount.is(':hidden')) {
-		if (workExamplesItem2.is(":hidden")){
-			workExamplesBtn.text('Свернуть');
-			workExamplesItem2.slideDown();
-		} else if (workExamplesItem2.is(":visible")){
-			workExamplesItem2.slideUp();
-			workExamplesBtn.text('Загрузить еще стилей');
-		}
-	} else if (workExamplesCount.is(':visible')) {
-		if (workExamplesItem6.is(":hidden")){
-			workExamplesBtn.text('Свернуть');
-			workExamplesItem6.slideDown();
-		} else if (workExamplesItem6.is(":visible")){
-			workExamplesItem6.slideUp();
-			workExamplesBtn.text('Загрузить еще стилей');
-		}
-	}
-});*/
-
-workExamplesBtn.click(function() {
 	if (workExamplesCount.is(':hidden')) {
 		if (workExamplesItem2.is(":hidden")){
 			workExamplesBtn.text('Свернуть');
@@ -127,7 +133,7 @@ workExamplesBtn.click(function() {
 			workExamplesBtn.text('Загрузить еще стилей');
 		}
 	}
-});
+});*/
 
 /*work_examples__btn.click(function() {
 	work_examples__item.slideToggle();
