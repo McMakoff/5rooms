@@ -82,6 +82,23 @@ jQuery(document).ready(function($){
 	});
 /*координаты стрелок навигации слайлера баннера конец*/
 
+/*координаты стрелок навигации flex-slider*/
+	var spf = $('.flex-slider .slick-prev'),
+		content = $('.flex-slider__content'),
+		snf = $('.flex-slider .slick-next');
+
+	spf.offset({left:content.offset().left + content.innerWidth() - spf.width() * 2 - 50,
+				top:content.offset().top + 15});
+	snf.offset({left:content.offset().left + content.innerWidth() - spf.width() - 15,
+				top:content.offset().top + 15});
+	$(window).resize(function() {
+		spf.offset({left:content.offset().left + content.innerWidth() - spf.width() * 2 - 50,
+					top:content.offset().top + 15});
+		snf.offset({left:content.offset().left + content.innerWidth() - spf.width() - 15,
+					top:content.offset().top + 15});
+	});
+/*координаты стрелок навигации слайлера баннера конец*/
+
 /*Загрузить еще*/
 
 var workBtn = $('#work-btn'),
@@ -114,37 +131,6 @@ workBtn.click(function() {
 workBtnRoom.click(function() {
 	loadIem(workBtnRoom, workExamplesRoomItem, btnRoomText);
 });
-
-/*workExamplesBtn.click(function() {
-	if (workExamplesCount.is(':hidden')) {
-		if (workExamplesItem2.is(":hidden")){
-			workExamplesBtn.text('Свернуть');
-			workExamplesItem2.slideDown();
-		} else {
-			workExamplesItem2.slideUp();
-			workExamplesBtn.text('Загрузить еще стилей');
-		}
-	} else {
-		if (workExamplesItem6.is(":hidden")){
-			workExamplesBtn.text('Свернуть');
-			workExamplesItem6.slideDown();
-		} else {
-			workExamplesItem6.slideUp();
-			workExamplesBtn.text('Загрузить еще стилей');
-		}
-	}
-});*/
-
-/*work_examples__btn.click(function() {
-	work_examples__item.slideToggle();
-	if (work_examples__item.css("display") == 'none'){
-		work_examples__btn.text('Загрузить еще стилей');
-	} else if (work_examples__item.css("display") == 'block'){
-		work_examples__btn.text('Свернуть');
-	}
-});*/
-
-
 /*Загрузить еще конец*/
 
 });

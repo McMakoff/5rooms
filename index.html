@@ -654,7 +654,55 @@
 							<p class="work-examples__count">Более 407 проектов</p>
 						</li>
 					</ul>
-					<button class="work-examples__btn btn-flex yellow-btn" id="work-room-btn">Загрузить еще</button>
+					<button class="work-examples__btn-room btn-flex yellow-btn" id="work-room-btn">Загрузить еще</button>
+				</div>
+			</div>
+		</section>
+		<section class="arguments section-page">
+			<div class="container">
+				<h2 class="section-title">Три аргумента, чтобы заказать дизайн-проект</h2>
+				<div class="arguments__slider flex-slider">
+					<div class="arguments__item flex-slider__item">
+						<div class="arguments__img flex-slider__img img-wrap img-wrap_cover">
+							<img src="img/arg1.jpg" alt="">
+						</div>
+						<div class="arguments__wrap">
+							<h2 class="section-title">Три аргумента, чтобы заказать дизайн-проект</h2>
+							<div class="arguments__content flex-slider__content">
+								<span class="arguments__count">1</span>
+								<h3 class="arguments__title">Понимание</h3>
+								<p class="arguments__desc">Вы сразу будете понимать конечный результат ремонта и неупустите ничего важного.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="arguments__item flex-slider__item">
+						<div class="arguments__img flex-slider__img img-wrap img-wrap_cover">
+							<img src="img/arg1.jpg" alt="">
+						</div>
+						<div class="arguments__wrap">
+							<h2 class="section-title">Три аргумента, чтобы заказать дизайн-проект</h2>
+							<div class="arguments__content flex-slider__content">
+								<span class="arguments__count">1</span>
+								<h3 class="arguments__title">Понимание</h3>
+								<p class="arguments__desc">Вы сразу будете понимать конечный результат ремонта и неупустите ничего важного. Вы сразу будете понимать конечный результат ремонта и неупустите ничего важного.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="arguments__item flex-slider__item">
+						<div class="arguments__img flex-slider__img img-wrap img-wrap_cover">
+							<img src="img/arg1.jpg" alt="">
+						</div>
+						<div class="arguments__wrap">
+							<h2 class="section-title">Три аргумента, чтобы заказать дизайн-проект</h2>
+							<div class="arguments__content flex-slider__content">
+								<span class="arguments__count">1</span>
+								<h3 class="arguments__title">Понимание</h3>
+								<p class="arguments__desc">Вы сразу будете понимать конечный результат ремонта и неупустите ничего важного. Вы сразу будете понимать конечный результат ремонта и неупустите ничего важного. Вы сразу будете понимать конечный результат ремонта и неупустите ничего важного.</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -751,6 +799,22 @@
 		      }
 		    }]
 		});
+	</script>
+	<script>
+		$('.arguments__slider').slick({
+		  dots: false,
+		  arrows:true,
+		  infinite: true,
+		  adaptiveHeight:true,
+		  speed: 300,
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  fade: true,
+  		  cssEase: 'linear'
+		});
+		$(".arguments__slider").on('afterChange', function(event, slick, currentSlide){
+	    	$(".arguments__count").text(currentSlide + 1);
+	  	});
 	</script>
 </body>
 </html>
