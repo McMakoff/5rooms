@@ -656,7 +656,8 @@ body {
   background: #fff;
   -webkit-box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25); }
-  .form-content input {
+  .form-content input,
+  .form-content textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -667,17 +668,22 @@ body {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
-    .form-content input:focus {
+    .form-content input:focus,
+    .form-content textarea:focus {
       outline: none;
       -webkit-box-shadow: 0px 0px 3px #000000;
       box-shadow: 0px 0px 3px #000000; }
-    .form-content input::-webkit-input-placeholder {
+    .form-content input::-webkit-input-placeholder,
+    .form-content textarea::-webkit-input-placeholder {
       color: #A6A6A6; }
-    .form-content input:-ms-input-placeholder {
+    .form-content input:-ms-input-placeholder,
+    .form-content textarea:-ms-input-placeholder {
       color: #A6A6A6; }
-    .form-content input::-ms-input-placeholder {
+    .form-content input::-ms-input-placeholder,
+    .form-content textarea::-ms-input-placeholder {
       color: #A6A6A6; }
-    .form-content input::placeholder {
+    .form-content input::placeholder,
+    .form-content textarea::placeholder {
       color: #A6A6A6; }
 
 .form-title {
@@ -1151,6 +1157,7 @@ body {
   color: #fff; }
 
 /*design-fix end*/
+/*reviews*/
 .reviews__list {
   margin: 0;
   padding: 0;
@@ -1195,6 +1202,10 @@ body {
   line-height: 17px; }
 
 .review__lighthouse {
+  display: none; }
+
+/*reviews end*/
+.questions__img {
   display: none; }
 
 /*media*/
@@ -1807,13 +1818,25 @@ body {
   .back-form .section-title,
   .back-form .back-form__desc {
     text-align: left; }
+  .questions .container {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .form-content_static {
+    max-width: 400px;
+    min-width: 400px;
+    margin: 0; }
   .back-form__wrap {
     max-width: 500px;
     margin-right: 30px; }
   .author-supervision__wrap {
+    margin-right: 0; }
+  .questions__wrap {
     margin-right: 0;
-    max-width: 400px;
-    min-width: 400px; }
+    margin-left: 30px; }
+    .questions__wrap .form-content_static {
+      max-width: 500px;
+      min-width: 500px; }
   .back-form__img {
     margin: 0;
     max-width: 100%;
@@ -1858,7 +1881,12 @@ body {
     height: auto;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
-    order: 2; } }
+    order: 2; }
+  .questions__img {
+    display: block;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0; } }
 
 @media (min-width: 1100px) {
   .arguments__wrap {
@@ -1933,9 +1961,6 @@ body {
   .fixed-price__item {
     max-width: 365px;
     margin-bottom: 30px; }
-  .form-content_static {
-    max-width: 400px;
-    margin: 0; }
   .arguments__content {
     width: 100%;
     max-width: 475px;
