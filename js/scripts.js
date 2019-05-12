@@ -129,7 +129,11 @@ var workBtn = $('#work-btn'),
 	workExamplesCount = $('.work-examples__list .work-examples__count'),
 	workExamplesItem6 = $('.work-examples__item:gt(5)'),
 	workBtnRoom = $('#work-room-btn'),
-	workExamplesRoomItem = $('.work-exampless__room-item:gt(3)');
+	workExamplesRoomItem = $('.work-exampless__room-item:gt(3)'),
+	reviewBtn = $('#review-btn'),
+	reviewLighthouse  = $('.review__lighthouse '),
+	reviewItem2 = $('.review__item:gt(1)'),
+	reviewItem3 = $('.review__item:gt(2)');
 
 function loadIem (btn, item, text) {
 	if (item.is(":hidden")) {
@@ -151,6 +155,14 @@ workBtn.click(function() {
 
 workBtnRoom.click(function() {
 	loadIem(workBtnRoom, workExamplesRoomItem, btnRoomText);
+});
+
+reviewBtn.click(function() {
+	if (reviewLighthouse.is(':hidden')) {
+		loadIem(reviewBtn, reviewItem2, btnRoomText);
+	} else {
+		loadIem(reviewBtn, reviewItem3, btnRoomText);
+	}
 });
 /*Загрузить еще конец*/
 
