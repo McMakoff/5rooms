@@ -861,6 +861,9 @@ body {
   padding: 0;
   list-style: none; }
 
+.design-enter__item {
+  margin-bottom: 30px; }
+
 .design-enter__img {
   display: none; }
 
@@ -1423,8 +1426,9 @@ body {
     .design-enter .container {
       padding: 0 0 0 15px; }
     .design-enter .section-title {
-      margin: 0; }
+      margin-bottom: 50px; }
   .design-enter__item {
+    margin-bottom: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1454,7 +1458,9 @@ body {
       -ms-transform-origin: right top;
       transform-origin: right top;
       -webkit-transform: translateY(-50%) rotateX(30deg);
-      transform: translateY(-50%) rotateX(30deg); }
+      transform: translateY(-50%) rotateX(30deg);
+      -webkit-box-shadow: -20px 30px 18px 0 rgba(0, 0, 0, 0.25);
+      box-shadow: -20px 30px 18px 0 rgba(0, 0, 0, 0.25); }
   .design-link {
     font-size: 20px; }
   .fixed-price__slider {
@@ -1621,7 +1627,9 @@ body {
 
 @media (min-width: 600px) {
   .design-enter .section-title {
-    margin: 0 0 10px; }
+    margin: 0 0 60px; }
+  .design-enter___item {
+    margin: 0 0 70px; }
   .design-title {
     font-size: 24px; }
   .design-count {
@@ -1758,7 +1766,7 @@ body {
     font-size: 42px;
     line-height: 48px; }
   .design-enter .section-title {
-    margin: 0; }
+    margin-bottom: 70px; }
   .design-enter__wrap {
     width: 60%; }
   .design-enter__img {
@@ -2031,12 +2039,21 @@ body {
     .design-enter .container {
       padding: 0 15px; }
     .design-enter .section-title {
-      margin-bottom: -50px;
+      margin-bottom: 50px;
       text-align: left; }
   .design-enter__img {
-    right: 70px; }
+    right: 40px;
+    position: relative;
+    height: 250px; }
     .design-enter__img img {
-      width: 100%; }
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) rotateX(30deg);
+      transform: translate(-50%, -50%) rotateX(30deg);
+      -o-object-fit: cover;
+      object-fit: cover; }
   .back-form .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2170,7 +2187,10 @@ body {
     display: block;
     width: 0;
     height: 0;
-    position: absolute; } }
+    position: absolute; }
+  .design-enter__img {
+    height: 300px;
+    right: 50px; } }
 
 @media (min-width: 1200px) {
   .navigation_main {
@@ -2199,16 +2219,14 @@ body {
     color: #000; }
   .main-header .contact {
     margin: 0 30px 0 0; }
-  .design-enter {
-    padding: 100px 0 70px; }
-    .design-enter .section-title {
-      margin-bottom: -75px; }
+  .design-enter .section-title {
+    margin-bottom: 75px; }
   .design-enter__wrap {
     width: 50%; }
   .design-enter__img {
     width: 50%;
     height: 350px;
-    right: 90px; }
+    right: 80px; }
   .fixed-price__slider {
     max-width: 1110px; }
     .fixed-price__slider .slick-track {
