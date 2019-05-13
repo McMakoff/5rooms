@@ -617,6 +617,24 @@ body {
   .navigation__link:hover, .navigation__link:focus {
     text-decoration: underline; }
 
+.nav-foot {
+  padding: 15px 0;
+  border-bottom: 2px solid rgba(209, 57, 128, 0.71); }
+  .nav-foot ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .nav-foot a {
+    display: block;
+    padding: 5px 0;
+    font-family: gilroy-medium;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none; }
+    .nav-foot a:hover, .nav-foot a:focus {
+      outline: none;
+      text-decoration: underline; }
+
 /*navigation end*/
 /*banner*/
 .banner .slick-arrow {
@@ -1327,38 +1345,6 @@ body {
     background: #d13980;
     color: #fff; }
 
-/*main-footer end*/
-/*.main-footer__bottom {
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-pack:justify;
-	-ms-flex-pack:justify;
-	justify-content:space-between;
-	-ms-flex-wrap:wrap;
-	flex-wrap:wrap;
-	-webkit-box-align:start;
-	-ms-flex-align:start;
-	align-items:flex-start;
-}*/
-.nav-foot {
-  padding: 15px 0;
-  border-bottom: 2px solid rgba(209, 57, 128, 0.71); }
-  .nav-foot ul {
-    padding: 0;
-    margin: 0;
-    list-style: none; }
-  .nav-foot a {
-    display: block;
-    padding: 5px 0;
-    font-family: gilroy-medium;
-    font-size: 18px;
-    color: #fff;
-    text-decoration: none; }
-    .nav-foot a:hover, .nav-foot a:focus {
-      outline: none;
-      text-decoration: underline; }
-
 .materials {
   padding: 0;
   margin: 20px 0 0;
@@ -1367,6 +1353,7 @@ body {
   color: #A7A4A4;
   text-align: center; }
 
+/*main-footer end*/
 /*media*/
 @media (min-width: 440px) {
   .logo_footer {

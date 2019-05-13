@@ -120,8 +120,24 @@ jQuery(document).ready(function($){
 	});
 /*координаты стрелок навигации слайдера аргументы конец*/
 
-/*Загрузить еще*/
+/*Индекс элементов списка*/
 
+function itemCount (a, b) {
+	a.each(function(v_i, elem){
+		$(elem).find(b).text(v_i + 1);
+	});
+}
+
+var designEnterItem = $(".design-enter__item"),
+	designCount = '.design-count',
+	designDaysItem = $('.design-days__item');
+
+itemCount (designEnterItem, designCount);
+itemCount (designDaysItem, designCount);
+
+/*Индекс элементов списка конец*/
+
+/*Загрузить еще*/
 var workBtn = $('#work-btn'),
 	btnText = 'Загрузить еще стилей',
 	btnRoomText = 'Загрузить еще',
