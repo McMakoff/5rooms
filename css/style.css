@@ -347,7 +347,8 @@ body {
   padding: 0px 15px; }
 
 .img-wrap {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .img-wrap img {
     position: absolute;
     width: 100%;
@@ -1308,6 +1309,12 @@ body {
   background: #444; }
   .main-footer .container {
     max-width: 1250px; }
+  .main-footer .contact a {
+    color: #fff; }
+  .main-footer .contact__phone {
+    font-size: 18px; }
+  .main-footer .contact__mail {
+    font-size: 14px; }
 
 .main-footer__top {
   margin-bottom: 15px;
@@ -1326,15 +1333,6 @@ body {
   width: 115px;
   height: 35px;
   margin-right: auto; }
-
-.main-footer .contact a {
-  color: #fff; }
-
-.main-footer .contact__phone {
-  font-size: 18px; }
-
-.main-footer .contact__mail {
-  font-size: 14px; }
 
 .main-footer__back-call {
   width: 100%;
@@ -1369,6 +1367,65 @@ body {
   text-align: center; }
 
 /*main-footer end*/
+.famous-people .container {
+  padding: 0; }
+
+.famous-people .section-title {
+  padding: 0 15px; }
+
+.famous-people__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .famous-people__list .social {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    .famous-people__list .social li:first-child {
+      margin-left: 0; }
+    .famous-people__list .social li:last-child {
+      margin-right: 0; }
+    .famous-people__list .social__inst {
+      background-image: url(../img/inst-wh.svg); }
+
+.famous-people__item {
+  margin-bottom: 40px; }
+  .famous-people__item:last-child {
+    margin-bottom: 0; }
+
+.famous-people__video {
+  height: 200px;
+  margin-bottom: 15px; }
+
+.famous-people__content {
+  padding: 0 15px; }
+
+.famous-people__ava {
+  width: 70px;
+  height: 70px;
+  margin: 0 0 10px 10px;
+  float: right;
+  border: 1px solid #d13980;
+  border-radius: 20px 0px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.famous-people__name {
+  margin: 0 0 5px;
+  font-size: 20px;
+  font-weight: 300; }
+
+.famous-people__position {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #888888; }
+
+.famous-people__desc {
+  margin: 0 0 15px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #424242; }
+
 /*media*/
 @media (min-width: 440px) {
   .logo_footer {
@@ -1575,6 +1632,22 @@ body {
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 21px; }
+  .famous-people__video {
+    height: 300px;
+    margin-bottom: 20px; }
+  .famous-people__ava {
+    width: 120px;
+    height: 120px; }
+  .famous-people__name {
+    margin: 0 0 8px;
+    font-size: 24px; }
+  .famous-people__position {
+    margin: 0 0 15px;
+    font-size: 20px; }
+  .famous-people__desc {
+    margin: 0 0 20px;
+    font-size: 20px;
+    line-height: 24px; }
   .design-fix .slick-arrow {
     bottom: 5px; }
   .design-fix .slick-prev {
@@ -1680,6 +1753,24 @@ body {
   .arguments__desc {
     font-size: 24px;
     line-height: 30px; }
+  .famous-people__item {
+    margin-bottom: 60px; }
+  .famous-people__video {
+    height: 400px;
+    margin-bottom: 25px; }
+  .famous-people__ava {
+    width: 140px;
+    height: 140px; }
+  .famous-people__name {
+    margin: 0 0 10px;
+    font-size: 36px; }
+  .famous-people__position {
+    margin: 0 0 20px;
+    font-size: 24px; }
+  .famous-people__desc {
+    margin: 0 0 25px;
+    font-size: 24px;
+    line-height: 28px; }
   .design-fix__img {
     height: 500px; }
   .design-fix__content {
@@ -1948,6 +2039,35 @@ body {
     margin: 0 0 50px; }
   .fixed-price__summ {
     margin: 0 0 100px; }
+  .famous-people__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .famous-people__item .social__item {
+      width: 50px;
+      height: 50px; }
+  .famous-people__video {
+    height: auto;
+    min-width: 50%;
+    margin-bottom: 0; }
+  .famous-people__ava {
+    width: 100px;
+    height: 100px;
+    margin: 0 0 15px;
+    float: none; }
+  .famous-people__name {
+    margin: 0 0 5px;
+    font-size: 24px; }
+  .famous-people__position {
+    margin: 0 0 15px;
+    font-size: 14px; }
+  .famous-people__desc {
+    margin: 0 0 20px;
+    font-size: 16px;
+    line-height: 19px; }
   .work-examples__img {
     width: 340px; }
   .main-footer__bottom {
@@ -2166,6 +2286,9 @@ body {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2; }
+  .famous-people__ava {
+    width: 150px;
+    height: 150px; }
   .questions__img {
     display: block;
     -webkit-box-ordinal-group: 1;
@@ -2188,6 +2311,10 @@ body {
     font-size: 18px; }
   .main-footer__top {
     margin-bottom: 60px; }
+    .main-footer__top .social {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2; }
   .main-footer__back-call {
     width: auto;
     max-width: 250px;
@@ -2197,10 +2324,6 @@ body {
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3; }
-  .social_footer {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2; }
   .social__item {
     width: 40px;
     height: 40px;
@@ -2282,6 +2405,11 @@ body {
   .fixed-price__item {
     max-width: 365px;
     margin-bottom: 30px; }
+  .famous-people__video {
+    margin-right: 20px; }
+  .famous-people__ava {
+    width: 200px;
+    height: 200px; }
   .arguments__content {
     width: 100%;
     max-width: 475px;
