@@ -895,7 +895,7 @@ body {
   padding-left: 35px; }
 
 .design-enter__link {
-  margin: 120px auto 0; }
+  margin: 40px auto 0; }
 
 /*design-enter end*/
 /*fixed-price*/
@@ -1117,7 +1117,12 @@ body {
   .arguments__slider .slick-arrow {
     width: 25px;
     height: 25px;
-    top: auto; }
+    top: 25px; }
+  .arguments__slider .slick-prev {
+    left: auto;
+    right: 60px; }
+  .arguments__slider .slick-next {
+    right: 15px; }
 
 .arguments__wrap .section-title {
   display: none; }
@@ -1189,6 +1194,17 @@ body {
 .design-fix .container {
   padding: 0; }
 
+.design-fix .slick-arrow {
+  top: auto;
+  bottom: 15px; }
+
+.design-fix .slick-prev {
+  left: auto;
+  right: 65px; }
+
+.design-fix .slick-next {
+  right: 30px; }
+
 .design-fix__img {
   width: 100%;
   height: 300px;
@@ -1205,7 +1221,6 @@ body {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25); }
 
 .design-fix__title {
-  max-width: 210px;
   margin: 0 0 15px;
   color: #8D8D8D;
   font-size: 14px;
@@ -1410,8 +1425,6 @@ body {
     font-size: 30px; }
   .design-enter {
     overflow: hidden; }
-    .design-enter .container {
-      padding: 0 0 0 15px; }
     .design-enter .section-title {
       margin-bottom: 50px; }
   .design-enter__item {
@@ -1448,8 +1461,10 @@ body {
       transform: translateY(-50%) rotateX(30deg);
       -webkit-box-shadow: -20px 30px 18px 0 rgba(0, 0, 0, 0.25);
       box-shadow: -20px 30px 18px 0 rgba(0, 0, 0, 0.25); }
+  .design-enter__link {
+    margin: 70px auto 0; }
   .design-link {
-    font-size: 20px; }
+    font-size: 24px; }
   .fixed-price__slider {
     max-width: 500px; }
   .fixed-price__content {
@@ -1539,6 +1554,8 @@ body {
   .design-fix .slick-arrow {
     width: 30px;
     height: 30px; }
+  .arguments__slider .slick-arrow {
+    top: 30px; }
   .arguments__content {
     padding: 90px 40px 70px; }
   .arguments__count {
@@ -1558,13 +1575,16 @@ body {
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 21px; }
+  .design-fix .slick-arrow {
+    bottom: 5px; }
+  .design-fix .slick-prev {
+    right: 80px; }
   .design-fix__img {
     height: 400px;
     margin-bottom: 20px; }
   .design-fix__content {
     padding: 25px; }
   .design-fix__title {
-    max-width: 300px;
     margin: 0 0 25px;
     font-size: 20px;
     line-height: 23px; }
@@ -1642,7 +1662,12 @@ body {
     font-size: 24px; }
   .arguments__slider .slick-arrow {
     width: 40px;
-    height: 40px; }
+    height: 40px;
+    top: 40px; }
+  .arguments__slider .slick-prev {
+    right: 90px; }
+  .arguments__slider .slick-next {
+    right: 20px; }
   .arguments__content {
     padding: 100px 50px 100px; }
   .arguments__count {
@@ -1660,7 +1685,6 @@ body {
   .design-fix__content {
     padding: 30px; }
   .design-fix__title {
-    max-width: 360px;
     margin: 0 0 40px;
     font-size: 24px;
     line-height: 28px; }
@@ -1759,6 +1783,8 @@ body {
   .design-enter__img {
     width: 40%;
     height: 300px; }
+  .design-enter__link {
+    margin: 100px auto 0; }
   .design-link {
     font-size: 32px; }
   .back-form__img,
@@ -1876,9 +1902,15 @@ body {
       height: 100px; }
   .design-fix__slider .slick-arrow {
     width: 40px;
-    height: 40px; }
+    height: 40px;
+    bottom: 130px; }
+  .design-fix__slider .slick-prev {
+    right: auto;
+    left: 1%; }
+  .design-fix__slider .slick-next {
+    right: 1%; }
   .design-fix__content {
-    max-width: 690px;
+    max-width: 610px;
     margin: 0 auto; }
   .reviews__list {
     display: -webkit-box;
@@ -1980,6 +2012,13 @@ body {
     -webkit-box-shadow: none;
     box-shadow: none;
     padding: 10px 0; }
+    .arguments__slider .slick-arrow {
+      top: auto;
+      bottom: 0; }
+    .arguments__slider .slick-prev {
+      right: 482px; }
+    .arguments__slider .slick-next {
+      right: 410px; }
   .arguments__item {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -1993,7 +2032,7 @@ body {
   .arguments__wrap {
     min-width: 520px;
     max-width: 520px;
-    padding: 0 10px 10px 0;
+    padding: 0 10px 65px 0;
     margin-left: 20px; }
     .arguments__wrap .section-title {
       display: block;
@@ -2023,8 +2062,6 @@ body {
     padding: 50px 0 70px; }
   .design-enter {
     padding: 70px 0 70px; }
-    .design-enter .container {
-      padding: 0 15px; }
     .design-enter .section-title {
       margin-bottom: 50px;
       text-align: left; }
@@ -2041,6 +2078,8 @@ body {
       transform: translate(-50%, -50%) rotateX(30deg);
       -o-object-fit: cover;
       object-fit: cover; }
+  .design-enter__link {
+    margin: 140px auto 0; }
   .back-form .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2083,6 +2122,13 @@ body {
     -webkit-box-ordinal-group: 1;
     -ms-flex-order: 0;
     order: 0; }
+  .design-fix .slick-arrow {
+    bottom: -25px; }
+  .design-fix .slick-prev {
+    left: 15px; }
+  .design-fix .slick-next {
+    right: auto;
+    left: 80px; }
   .design-fix__item {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -2092,15 +2138,17 @@ body {
       font-size: 36px;
       line-height: 42px;
       text-align: left; }
+  .design-fix__img {
+    margin: 0; }
   .design-fix__wrap {
     width: 100%;
     max-width: 570px;
-    padding: 0 0 20px 15px;
+    padding: 0 0 50px 15px;
     margin-right: 30px; }
   .design-fix__content {
-    padding: 20px; }
+    padding: 20px;
+    margin: 0; }
   .design-fix__title {
-    max-width: 300px;
     margin: 0 0 25px;
     font-size: 20px;
     line-height: 23px; }
@@ -2214,6 +2262,8 @@ body {
     width: 50%;
     height: 350px;
     right: 80px; }
+  .design-enter__link {
+    margin: 170px auto 0; }
   .fixed-price__slider {
     max-width: 1110px; }
     .fixed-price__slider .slick-track {
@@ -2236,6 +2286,8 @@ body {
     width: 100%;
     max-width: 475px;
     padding: 100px 50px 80px; }
+  .design-fix .slick-arrow {
+    bottom: 0; }
   .design-fix__wrap {
     padding: 50px 0 80px 15px;
     margin-right: 50px; } }
@@ -2243,6 +2295,8 @@ body {
 @media (min-width: 1300px) {
   .navigation_main {
     margin: 0 60px; }
+  .design-enter__link {
+    margin: 190px auto 0; }
   .arguments__wrap {
     margin-left: 60px; } }
 

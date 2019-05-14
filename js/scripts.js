@@ -91,7 +91,7 @@ jQuery(document).ready(function($){
 		content = $('.arguments__content'),
 		snf = $('.arguments__slider .slick-next');
 
-	spf.offset({left:content.offset().left + content.innerWidth() - spf.width() * 3 - 15,
+	/*spf.offset({left:content.offset().left + content.innerWidth() - spf.width() * 3 - 15,
 				top:content.offset().top + 15});
 	snf.offset({left:content.offset().left + content.innerWidth() - spf.width() - 15,
 				top:content.offset().top + 15});
@@ -100,11 +100,19 @@ jQuery(document).ready(function($){
 					top:content.offset().top + 15});
 		snf.offset({left:content.offset().left + content.innerWidth() - spf.width() - 15,
 					top:content.offset().top + 15});
-	});
+	});*/
+
+	/*spf.offset({top:content.offset().top + 15});
+	snf.offset({top:content.offset().top + 15});
+	$(window).resize(function() {
+		spf.offset({top:content.offset().top + 15});
+		snf.offset({top:content.offset().top + 15});
+	});*/
+
 /*координаты стрелок навигации слайдера аргументы конец*/
 
 /*координаты стрелок навигации аргументы*/
-	var dfp = $('.design-fix__slider .slick-prev'),
+	/*var dfp = $('.design-fix__slider .slick-prev'),
 		dfContent = $('.design-fix__content'),
 		dfn = $('.design-fix__slider .slick-next');
 
@@ -117,7 +125,7 @@ jQuery(document).ready(function($){
 					top:dfContent.offset().top + dfContent.innerHeight() - dfp.width() - 15});
 		dfn.offset({left:dfContent.offset().left + dfContent.innerWidth() - dfp.width() - 15,
 					top:dfContent.offset().top + dfContent.innerHeight() - dfp.width() - 15});
-	});
+	});*/
 /*координаты стрелок навигации слайдера аргументы конец*/
 
 /*Индекс элементов списка*/
