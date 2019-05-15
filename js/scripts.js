@@ -84,72 +84,68 @@ jQuery(document).ready(function($){
 		bc.offset({left:(container.offset().left + sp.width() + 30)});
 		sn.offset({left:(container.offset().left + bc.innerWidth() + sp.width() + 45)});
 	});
-/*координаты стрелок навигации слайдера баннера конец*/
+	/*координаты стрелок навигации слайдера баннера конец*/
 
-/*Индекс элементов списка*/
+	/*Индекс элементов списка*/
 
-function itemCount (a, b) {
-	a.each(function(v_i, elem){
-		$(elem).find(b).text(v_i + 1);
+	function itemCount (a, b) {
+		a.each(function(v_i, elem){
+			$(elem).find(b).text(v_i + 1);
+		});
+	}
+
+	var designEnterItem = $(".design-enter__item"),
+		designCount = '.design-count',
+		designDaysItem = $('.design-days__item');
+
+	itemCount (designEnterItem, designCount);
+	itemCount (designDaysItem, designCount);
+
+	/*Индекс элементов списка конец*/
+
+	/*Загрузить еще*/
+	var workBtn = $('#work-btn'),
+		btnText = 'Загрузить еще стилей',
+		btnRoomText = 'Загрузить еще',
+		workExamplesItem2 = $('.work-examples__item:gt(2)'),
+		workExamplesCount = $('.work-examples__list .work-examples__count'),
+		workExamplesItem6 = $('.work-examples__item:gt(5)'),
+		workBtnRoom = $('#work-room-btn'),
+		workExamplesRoomItem = $('.work-exampless__room-item:gt(3)'),
+		reviewBtn = $('#review-btn'),
+		reviewLighthouse  = $('.review__lighthouse '),
+		reviewItem2 = $('.review__item:gt(1)'),
+		reviewItem3 = $('.review__item:gt(2)');
+
+	function loadIem (btn, item, text) {
+		if (item.is(":hidden")) {
+			btn.text('Свернуть');
+			item.slideDown();
+		} else {
+			item.slideUp();
+			btn.text(text);
+		}
+	}
+
+	workBtn.click(function() {
+		if (workExamplesCount.is(':hidden')) {
+			loadIem(workBtn, workExamplesItem2, btnText);
+		} else {
+			loadIem(workBtn, workExamplesItem6, btnText);
+		}
 	});
-}
 
-var designEnterItem = $(".design-enter__item"),
-	designCount = '.design-count',
-	designDaysItem = $('.design-days__item');
+	workBtnRoom.click(function() {
+		loadIem(workBtnRoom, workExamplesRoomItem, btnRoomText);
+	});
 
-itemCount (designEnterItem, designCount);
-itemCount (designDaysItem, designCount);
-
-/*Индекс элементов списка конец*/
-
-/*Загрузить еще*/
-var workBtn = $('#work-btn'),
-	btnText = 'Загрузить еще стилей',
-	btnRoomText = 'Загрузить еще',
-	workExamplesItem2 = $('.work-examples__item:gt(2)'),
-	workExamplesCount = $('.work-examples__list .work-examples__count'),
-	workExamplesItem6 = $('.work-examples__item:gt(5)'),
-	workBtnRoom = $('#work-room-btn'),
-	workExamplesRoomItem = $('.work-exampless__room-item:gt(3)'),
-	reviewBtn = $('#review-btn'),
-	reviewLighthouse  = $('.review__lighthouse '),
-	reviewItem2 = $('.review__item:gt(1)'),
-	reviewItem3 = $('.review__item:gt(2)');
-
-function loadIem (btn, item, text) {
-	if (item.is(":hidden")) {
-		btn.text('Свернуть');
-		item.slideDown();
-	} else {
-		item.slideUp();
-		btn.text(text);
-	}
-}
-
-workBtn.click(function() {
-	if (workExamplesCount.is(':hidden')) {
-		loadIem(workBtn, workExamplesItem2, btnText);
-	} else {
-		loadIem(workBtn, workExamplesItem6, btnText);
-	}
-});
-
-workBtnRoom.click(function() {
-	loadIem(workBtnRoom, workExamplesRoomItem, btnRoomText);
-});
-
-reviewBtn.click(function() {
-	if (reviewLighthouse.is(':hidden')) {
-		loadIem(reviewBtn, reviewItem2, btnRoomText);
-	} else {
-		loadIem(reviewBtn, reviewItem3, btnRoomText);
-	}
-});
-/*Загрузить еще конец*/
-
-$('.famous-people__video').click(function() {
-	$('.famous-people__ava').slideToggle();
-})
+	reviewBtn.click(function() {
+		if (reviewLighthouse.is(':hidden')) {
+			loadIem(reviewBtn, reviewItem2, btnRoomText);
+		} else {
+			loadIem(reviewBtn, reviewItem3, btnRoomText);
+		}
+	});
+	/*Загрузить еще конец*/
 
 });
