@@ -651,7 +651,7 @@ body {
   left: auto; }
 
 .banner__item {
-  padding: 100px 0 70px; }
+  padding: 125px 0 125px; }
 
 .banner__img.img-wrap {
   position: static; }
@@ -1461,7 +1461,7 @@ body {
     margin: 10px 0 20px;
     font-size: 12px; }
   .banner__item {
-    padding: 130px 0 150px; }
+    padding: 150px 0 150px; }
     .banner__item .order-btn {
       padding: 15px 10px;
       font-size: 20px; }
@@ -1847,7 +1847,7 @@ body {
   .main-header__back-call {
     margin: 0 20px 0 0; }
   .banner__item {
-    padding: 200px 0 200px; }
+    padding: 250px 0 250px; }
     .banner__item .order-btn {
       padding: 20px 15px;
       font-size: 24px; }
